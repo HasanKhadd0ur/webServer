@@ -19,7 +19,7 @@ public class TaskGeometricMean extends TaskImpl {
                 .toArray();
 
         // Check if all the values is poistive
-        boolean allPositive =Arrays.stream(doubleArray).allMatch((e)->e>0);
+        boolean allPositive =Arrays.stream(doubleArray).allMatch((e)->e>=0);
 
         if(allPositive){
             // Calculate the geometric mean
